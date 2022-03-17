@@ -10,7 +10,7 @@ import Footer from "./components/Templates/Footer";
 const App = ()=>{
     return (
         <Box>
-            <Header></Header>
+            <Header/>
             <Box class="screen" sx={{position:"fixed"}}>
                 <Box sx={{height:63}}></Box>
                 <Routes>
@@ -19,7 +19,7 @@ const App = ()=>{
                 </Routes>
                 <Box sx={{height:63}}></Box>
             </Box>
-            <Footer></Footer>
+            <Footer/>
         </Box>
     );
 }
