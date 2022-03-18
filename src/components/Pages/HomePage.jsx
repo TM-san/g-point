@@ -4,22 +4,7 @@ import React from "react"
 const HomePage = () =>{
     return (
         <Box>
-            <h1>こんにちは</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
+            <h1>home</h1>
         </Box>
     );
 }

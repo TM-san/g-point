@@ -8,8 +8,13 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import MessageIcon from '@mui/icons-material/Message';
 import { Link } from "react-router-dom"; 
 
+const PageIndex={
+    "home":0,"map":1,"schedule":2,"alert":3
+};
+
 const Footer =()=>{
-    const [value, setValue] = React.useState(0);
+    const MainLink = window.location.pathname.split("/")[1];
+    const [value, setValue] = React.useState(PageIndex[MainLink]);
     
     return (
         <Box sx={{
@@ -24,10 +29,10 @@ const Footer =()=>{
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction label="ホーム" icon={<HomeIcon />} component={Link} to='/'/>
+                <BottomNavigationAction label="ホーム" icon={<HomeIcon />} component={Link} to='/home'/>
                 <BottomNavigationAction label="校内マップ" icon={<MapIcon />} component={Link} to='/map'/>
-                <BottomNavigationAction label="スケジュール" icon={<DateRangeIcon />} />
-                <BottomNavigationAction label="お知らせ" icon={<MessageIcon />} />
+                <BottomNavigationAction label="スケジュール" icon={<DateRangeIcon />} component={Link} to='/schedule'/>
+                <BottomNavigationAction label="お知らせ" icon={<MessageIcon />} component={Link} to='/alert'/>
             </BottomNavigation>
         </Box>
         
