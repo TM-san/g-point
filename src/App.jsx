@@ -16,7 +16,7 @@ const App = ()=>{
             <Box class="screen" sx={{position:"fixed"}}>
                 <Box sx={{height:63}}></Box>
                 <Routes>
-                    <Route path="/home" element={<HomePage/>} />
+                    <Route path="/" element={<HomePage/>} />
                     <Route path="/map" element={<MapPage/>} />
                     <Route path="/schedule" element={<SchedulePage/>} />
                     <Route path="/alert" element={<AlertPage/>} />

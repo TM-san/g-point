@@ -9,7 +9,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import { Link } from "react-router-dom"; 
 
 const PageIndex={
-    "home":0,"map":1,"schedule":2,"alert":3
+    "":0,"map":1,"schedule":2,"alert":3
 };
 
 const Footer =()=>{
@@ -29,7 +29,7 @@ const Footer =()=>{
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction label="ホーム" icon={<HomeIcon />} component={Link} to='/home'/>
+                <BottomNavigationAction label="ホーム" icon={<HomeIcon />} component={Link} to='/'/>
                 <BottomNavigationAction label="校内マップ" icon={<MapIcon />} component={Link} to='/map'/>
                 <BottomNavigationAction label="スケジュール" icon={<DateRangeIcon />} component={Link} to='/schedule'/>
                 <BottomNavigationAction label="お知らせ" icon={<MessageIcon />} component={Link} to='/alert'/>
