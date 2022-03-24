@@ -9,7 +9,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import { Link } from "react-router-dom"; 
 
 const PageIndex={
-    "home":0,"map":1,"schedule":2,"alert":3
+    "":0,"map":1,"schedule":2,"alert":3
 };
 
 const Footer =()=>{
