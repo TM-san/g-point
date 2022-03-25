@@ -43,10 +43,10 @@ function LabTabs() {
     };
   
     return (
-      <Box sx={{ width: '100%'}}>
+      <Box sx={{ width: '100vw',position:'absolute'}}>
         <TabContext value={value}>
-          <Box overflow={"hidden"} sx={{ borderBottom: 2, borderColor: 'divider' ,width:374.5,margin:"auto"}}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example" >
+          <Box overflow={"hidden"} sx={{ position:'relative',borderBottom: 2, borderColor: 'divider' ,width:'360px',left:'calc(50% - 180px)'}}>
+            <TabList onChange={handleChange} aria-label="lab API tabs example">
               <Tab label="娯楽" value="1" />
               <Tab label="展示" value="2" />
               <Tab label="食版" value="3" />

@@ -57,6 +57,7 @@ class MapPage extends React.Component {
                     onClose={() => toggleDrawer(false)}
                     disableSwipeToOpen={false}
                     swipeAreaWidth={drawerBleeding}
+                    variant='temporary'
                     ModalProps={{ keepMounted: true, disableAutoFocus: true }}
                     BackdropProps={{ invisible: true }}>
                     <Box sx={{
