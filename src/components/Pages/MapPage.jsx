@@ -84,7 +84,7 @@ class MapPage extends React.Component {
                             left: 'calc(50% - 15px)',
                         }} />
                         <Box sx={{position:'relative',width:'100%',paddingTop:2}}>
-                            <Typography variant='h3'>{ClubsData['1'][0]}</Typography>
+                            <Typography variant='h3'>{ClubsData['2'][0]}</Typography>
                         </Box>
                     </Box>
                     <Box sx={{ position:'relative',top:-56,height: '100%', overflowY: 'scroll' }}>
