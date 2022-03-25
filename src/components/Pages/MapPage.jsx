@@ -4,12 +4,15 @@ import { Box, SwipeableDrawer, Typography } from '@mui/material'
 import { ReactComponent as Map } from './map.svg'
 import { grey } from '@mui/material/colors'
 
-const drawerBleeding = 90;
+const drawerBleeding = 130;
+const ClubsData={"1":["RCC","カジノ","きのこ"],"2":["物理部","かがくもん"],"3":["コーヒー","チュロス"],"4":["軽音","ブラバン"]}
+
 
 class MapPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = { open: false };
+        this.ClubData=props.ClubData;
         this.svg = React.createRef();
         this.setclick = () => {
             if (this.svg) {
@@ -80,9 +83,11 @@ class MapPage extends React.Component {
                             top: 8,
                             left: 'calc(50% - 15px)',
                         }} />
+                        <Box sx={{position:'relative',width:'100%',paddingTop:2}}>
+                            <Typography variant='h3'>{ClubsData['1'][0]}</Typography>
+                        </Box>
                     </Box>
-                    <Box sx={{ position:'relative',top:-drawerBleeding*2/3,height: '100%', overflowY: 'scroll' }}>
-                        <Typography variant='h4'>物理部</Typography>
+                    <Box sx={{ position:'relative',top:-56,height: '100%', overflowY: 'scroll' }}>
                         <Typography>G-Pointの開発</Typography>
                         <Typography>G-Pointの開発</Typography>
                         <Typography>G-Pointの開発</Typography>
