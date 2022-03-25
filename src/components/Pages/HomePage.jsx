@@ -45,7 +45,7 @@ function LabTabs() {
     return (
       <Box sx={{ width: '100%'}}>
         <TabContext value={value}>
-          <Box  overflow={"hidden"} sx={{ borderBottom: 2, borderColor: 'divider' ,width:374.5,margin:"auto",}}>
+          <Box overflow={"hidden"} sx={{ borderBottom: 2, borderColor: 'divider' ,width:374.5,margin:"auto"}}>
             <TabList onChange={handleChange} aria-label="lab API tabs example" >
               <Tab label="娯楽" value="1" />
               <Tab label="展示" value="2" />

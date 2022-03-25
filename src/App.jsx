@@ -13,7 +13,7 @@ const App = ()=>{
     return (
         <Box>
             <Header/>
-            <Box class="screen" sx={{position:"fixed"}}>
+            <Box sx={{position:"fixed"}}>
                 <Box sx={{height:63}}></Box>
                 <Routes>
                     <Route path="/" element={<HomePage/>} />
