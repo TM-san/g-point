@@ -50,7 +50,7 @@ class MapPage extends React.Component {
                         },
                     }}
                 />
-                <Box sx={{ overflow: 'scroll' }}>
+                <Box sx={{ width:'100%',height:'calc(100% - 140px)', overflow: 'scroll' }}>
                     <Map ref={this.svg} />
                 </Box>
                 <SwipeableDrawer
