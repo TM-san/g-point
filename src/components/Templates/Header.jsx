@@ -4,9 +4,9 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
 
 const Search = styled('div')(({ theme }) => ({
@@ -43,9 +43,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '12ch',
+      width: '20ch',
       '&:focus': {
-        width: '20ch',
+        width: "40ch",
       },
     },
   },
@@ -67,14 +67,19 @@ const Header=()=> {
           >
             <PersonIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            sx={{mr:5 }}
           >
-            G-Point
-          </Typography>
+            <NotificationsIcon />
+          </IconButton>
+          <Box 
+            sx={{ flexGrow: 1, }}
+          >
+          </Box>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
