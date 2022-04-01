@@ -45,12 +45,12 @@ function LabTabs() {
     return (
       <Box sx={{ width: '100vw',position:'absolute'}}>
         <TabContext value={value}>
-          <Box overflow={"hidden"} sx={{ position:'relative',borderBottom: 2, borderColor: 'divider' ,width:'360px',left:'calc(50% - 180px)'}}>
+          <Box overflow={"scroll"} sx={{ position:'relative',borderBottom: 2, borderColor: 'divider' ,width:'min(80% , 720px)',left:'max(10% , calc(50% - 360px)  )'}}>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="娯楽" value="1" />
-              <Tab label="展示" value="2" />
-              <Tab label="食版" value="3" />
-              <Tab label="バンド" value="4" />
+              <Tab label="娯楽" value="1" sx={{width:'25%'}}/>
+              <Tab label="展示" value="2" sx={{width:'25%'}}/>
+              <Tab label="食版" value="3" sx={{width:'25%'}}/>
+              <Tab label="バンド" value="4" sx={{width:'25%'}}/>
             </TabList>
           </Box>
           <Box overflow={"scroll"} sx={{position:"fixed",top:130,bottom:40,width:"100%"}}>
